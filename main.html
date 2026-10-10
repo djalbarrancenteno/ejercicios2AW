@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Albarran</title>
+</head>
+<body>
+
+    <h1>Ejercicios 2 Aplicaciones Web: David Albarran</h1>
+
+<!-- FORMULARIO DEL PRIMER EJERCICIO -->    
+        <details>
+            <summary>Ejercicio 1: Quincena por turnos<br/></summary>
+            <form action="procesarQuincena.php" method="POST">
+                <div class="nombre">
+                    <label for="nombre">Ingrese su nombre: </label>
+                    <input type="text" name="nombre" id="nombre" required> <br/>
+                </div>
+                <div class="cedula">
+                    <label for="cedula">Ingrese su cedula: </label>
+                    <input type="text" name="cedula" id="cedula" required> <br/>
+                </div>
+                <div class="horas_diurnas">
+                    <label for="horas_diurnas">Cuantas horas diurna hizo: </label>
+                    <input type="number" name="horas_diurnas" id="horas_diurnas" required> <br/>
+                </div>
+                <div class="horas_vespertinas">
+                    <label for="horas_vespertinas">Cuantas horas vespertinas hizo: </label>
+                    <input type="number" name="horas_vespertinas" id="horas_vespertinas" required> <br/>
+                </div>
+                <div class="horas_nocturnas">
+                    <label for="horas_nocturnas">Cuantas horas nocturnas hizo: </label>
+                    <input type="number" name="horas_nocturnas" id="horas_nocturnas" required> <br/>
+                </div>            
+                <button type="submit">Procesar salario</button> 
+            </form>
+        </details>
+
+<!-- FORMULARIO DEL SEGUNDO EJERCICIO -->               
+        <details>
+            <summary>Ejercicio 2: Facturacion de producto<br/></summary>
+            <form action="procesarFacturacion.php" method="POST">
+                <div class="descripcion_articulo">
+                    <label for="descripcion_articulo"></label>
+                    <textarea rows="3" type="text" name="descripcion_articulo" id="descripcion_articulo"  placeholder="Escriba la descripcion del articulo. Ej: Arroz 1k " required></textarea>
+                </div>
+                <div class="cantidad_articulo">
+                    <label for="cantidad_articulo">Ingrese la cantidad de ese articulo que adquiere: </label>
+                    <input rows="3" type="number" name="cantidad_articulo" id="cantidad_articulo" required> <br/>
+                </div>
+                <div class="precio_unitario">
+                    <label for="precio_unitario">Ingrese el precio unitario del articulo: </label>
+                    <input type="number" step="any" name="precio_unitario" id="precio_unitario" required> <br/>
+                </div>          
+                <button type="submit">Procesar factura</button> 
+            </form>
+        </details>        
+
+</body>
+</html>
